@@ -4,8 +4,8 @@ This repo will represent my Journy through Spring Framework. I will also be usin
 
 
 # Parts Directory API Project
-  * Framework
-    * Spring
+  * Frameworks
+    * Spring Boot (REST API)
       * Dependencies
         * Spring Web
         * Spring Data JPA
