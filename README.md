@@ -13,4 +13,9 @@ This repo will represent my Journy through Spring Framework. I will also be usin
     * Hibernate
       * MySQL DB WorkBench
 
+# Hibernate Project
+ * Hibernate Framework
+ * MySQL DB
+
+
     
