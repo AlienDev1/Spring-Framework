@@ -1,0 +1,17 @@
+
+CREATE USER 'employee'@'localhost' identified by 'employee';
+grant all privileges on *.* to 'employee'@'localhost';
+alter user 'employee'@'localhost' identified with mysql_native_passowrd by 'password1';
+
+CREATE DATABASE  IF NOT EXISTS `db1`;
+USE `employee`;
+
+DROP TABLE IF EXISTS `emp`;
+student
+CREATE TABLE `emp` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
