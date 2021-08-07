@@ -1,7 +1,7 @@
 package com.example.Parts_Directory_API.service;
 
 import com.example.Parts_Directory_API.dao.PartDao;
-import com.example.Parts_Directory_API.pojo.Part;
+import com.example.Parts_Directory_API.pojo.Piece;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -21,27 +21,27 @@ public class PartService {
     }
 
     //Adds to DB
-    public int addPart(Part part){
-        return partDao.insertParts(part);
+    public int addPart(Piece piece){
+        return partDao.insertParts(piece);
     }
 
     //Returns List of Parts
-    public List<Part> getAllParts(){
+    public List<Piece> getAllParts(){
         return partDao.selectAllParts();
     }
 
-    //Returns Specified Part
-    public Optional<Part> getPartById(UUID id){
+    //Returns Specified Piece
+    public Optional<Piece> getPartById(UUID id){
         return partDao.selectPartById(id);
     }
 
-    //Removes Part from DB
+    //Removes Piece from DB
     public int deletePart(UUID id){
         return partDao.deletePartById(id);
     }
 
-    //Changes Part
-    public int updatePart(UUID id, Part newPart){
-        return partDao.updatePartById(id, newPart);
+    //Changes Piece
+    public int updatePart(UUID id, Piece newPiece){
+        return partDao.updatePartById(id, newPiece);
     }
 }

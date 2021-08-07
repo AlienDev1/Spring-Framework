@@ -1,6 +1,6 @@
 package com.example.Parts_Directory_API.controller;
 
-import com.example.Parts_Directory_API.pojo.Part;
+import com.example.Parts_Directory_API.pojo.Piece;
 import com.example.Parts_Directory_API.service.PartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,17 +20,17 @@ public class Controller {
     }
 
     @PostMapping
-    public void addPart(@RequestBody Part part){
-        service.addPart(part);
+    public void addPart(@RequestBody Piece piece){
+        service.addPart(piece);
     }
 
     @GetMapping
-    public List<Part> getAllParts(){
+    public List<Piece> getAllParts(){
         return service.getAllParts();
     }
 
     @GetMapping(path = "{id}")
-    public Part getPartById(@PathVariable("id") UUID id){
+    public Piece getPartById(@PathVariable("id") UUID id){
         return service.getPartById(id).orElse(null);
     }
 
@@ -40,8 +40,8 @@ public class Controller {
     }
 
     @PutMapping(path = "{id}")
-    public void updatePart(@PathVariable("id") UUID id, Part partToUpdate){
-        service.updatePart(id, partToUpdate);
+    public void updatePart(@PathVariable("id") UUID id, Piece pieceToUpdate){
+        service.updatePart(id, pieceToUpdate);
     }
 
 }
