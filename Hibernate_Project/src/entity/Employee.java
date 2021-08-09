@@ -7,18 +7,18 @@ import javax.persistence.*;
 public class Employee {
 
     //Database Mapping
-    @Id //This will map the primary key
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //This is used with auto increment for your primary key.
-    @Column(name = "id") //This is mapping the primary key to the id column in your database.
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
+    @Column(name = "id")
     private int id;
 
-    @Column(name = "first_name") //This will map the firstName field to the column named first_name in your student table.
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "last_name") //This will map the lastName field to the column named last_name in your student table.
+    @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "company") //This will map the email field to the column named email in your student table.
+    @Column(name = "company")
     private  String company;
 
     //Constructors
