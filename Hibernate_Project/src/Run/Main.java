@@ -31,8 +31,11 @@ public class Main {
                     break;
                 default:
                     quit_app = 'y';
+                    break;
             }
 
-        }while(quit_app == 'y');
+        }while(quit_app == 'n');
+
+        System.out.println("You requested to terminate the application. Have a good day!");
     }
 }
