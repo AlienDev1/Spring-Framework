@@ -30,9 +30,9 @@ public class CreateDB {
                 System.out.println("Beginning transaction...");
 
                 //save the student object
-                session.save(obj1);
-                session.save(obj2);
-                session.save(obj3);
+//                session.save(obj1);
+//                session.save(obj2);
+//                session.save(obj3);
                 System.out.println("Saving the new students...");
 
                 //commit the transaction
