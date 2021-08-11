@@ -5,9 +5,9 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/?user=dbhibernate</property>
-        <property name="connection.username">dbhibernate</property>
-        <property name="connection.password">dbhibernate</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/?user=hibernatedb</property>
+        <property name="connection.username">hibernatedb</property>
+        <property name="connection.password">hibernatedb</property>
         <property name="connection.pool_size">1</property>
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
         <property name="show_sql">true</property>

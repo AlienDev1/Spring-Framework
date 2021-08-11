@@ -25,7 +25,7 @@ public class CreateDB {
                 System.out.println("Beginning transaction...");
 
 
-//                session.save(obj1); <- This is where my application is throwing the error org.hibernate.exception.GenericJDBCException: could not execute statement
+                //session.save(obj1); // <- This is where my application is throwing the error org.hibernate.exception.GenericJDBCException: could not execute statement
                 // When commented out the application runs successfully however data is not add to the DB
 
                 System.out.println("Saving the new object...");
